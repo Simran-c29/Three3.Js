@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Layout</title>
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            background-color: grey;
+        }
+        .box {
+            width: 1000;
+            height: 100px;
+            background-color: rgb(1, 1, 114);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .row {
+            display: flex;
+            gap: 20px;
+        }
+        .row .box {
+            width: 150px;
+            height: 150px;
+            background-color: rgb(10, 42, 117);
+        }
+        .box1 {
+            width: 600px;
+            height: 200px;
+            background-color: rgb(45, 7, 101);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .row1 {
+            display: flex;
+            gap: 20px;
+        }
+        .row1 .box1 {
+            width: 150px;
+            height: 150px;
+            background-color: rgb(2, 2, 37);
+        }
+        /* Hover effect */
+        .box1:hover {
+            background-color: rgb(207, 29, 136);
+            transform: scale(1.1);
+        }
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .row2 {
+            display: flex;
+            gap: 20px;
+        }
+        .row2 .box2 {
+            width: 150px;
+            height: 150px;
+            background-color: blue;
+        }
+        .box4 {
+            width: 400px;
+            height: 200px;
+            background-color: rgb(1, 1, 114);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .row4 {
+            display: flex;
+            gap: 20px;
+        }
+        .row4 .box4 {
+            width: 150px;
+            height: 150px;
+            background-color: rgb(10, 42, 117);
+        }
+        .box5 {
+            width: 400px;
+            height: 200px;
+            background-color: pink(1, 1, 114);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .row5 {
+            display: flex;
+            gap: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">TEAM 22</div>
+    <div class="row">
+        <div class="box1">html</div>
+        <div class="box1">css</div>
+        <div class="box1">js</div>
+    </div>
+    <h1>OUR PROJECTS</h1>
+    <div class="row">
+        <div class="box1">tic-tac-toe</div>
+        <div class="box1">dice</div>
+        <div class="box1">ladder</div>
+    </div>
+    <h2>OUR TEAM MEMBERS</h2>
+    <div class="row">
+        <div class="box4">
+            <ul>
+                <li>Simran</li>
+                <li>Enroll no A2..</li>
+                <li>C section</li>
+            </ul>
+        </div>
+        <div class="box4">
+            <ul>
+                <li>Arshleen</li>
+                <li>Enroll no A2..</li>
+                <li>B section</li>
+            </ul>
+        </div>
+        <div class="box4">
+            <ul>
+                <li>Shreya</li>
+                <li>Enroll no A2..</li>
+                <li>B section</li>
+            </ul>
+        </div>
+    </div>
+    <h3>PROFILE</h3>
+    <h4>GET IN TOUCH:</h4>
+    <div class="row">
+        <div class="box">
+            <ul>
+                <li>Follow us:</li>
+                <img src="https://www.freepik.com/free-photos-vectors/instagram-logo" alt="insta logo">
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
